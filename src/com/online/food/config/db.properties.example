@@ -2,7 +2,7 @@
 # db.properties is git-ignored so your password never reaches GitHub.
 #
 # Online MySQL 8 (SSL required by most hosts), using MySQL Connector/J 8.x:
-className=com.mysql.jdbc.Driver
-url=jdbc:mysql://YOUR_DB_HOST:YOUR_DB_PORT/?sslMode=REQUIRED
+className=com.mysql.cj.jdbc.Driver
+url=jdbc:mysql://YOUR_DB_HOST:YOUR_DB_PORT/mydb?sslMode=REQUIRED
 userName=YOUR_DB_USER
 password=YOUR_DB_PASSWORD
