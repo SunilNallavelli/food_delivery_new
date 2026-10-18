@@ -15,6 +15,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.online.food.util.DBConnection;
 import javax.servlet.http.Part;
 
 /**
@@ -42,8 +44,7 @@ public class AddItemsController extends HttpServlet {
 		PreparedStatement ps = null;
 		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306","root","root");
+			con=DBConnection.getDBConnection();
 			String sql1="INSERT INTO mydb.tab_items(itemname,price,deliverycharge,discount,image) VALUES (?,?,?,?,?)";			
 			ps=con.prepareStatement(sql1);
 			ps.setString(1, name);

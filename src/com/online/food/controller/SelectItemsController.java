@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.online.food.util.DBConnection;
+
 /**
  * Servlet implementation class SelectItemsController
  */
@@ -33,8 +35,7 @@ public class SelectItemsController extends HttpServlet {
 		
 		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306","root","root");
+			con=DBConnection.getDBConnection();
 			String sql1="select * from mydb.tab_items";			
 			stmt = con.createStatement();  
             rs = stmt.executeQuery(sql1); 

@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.online.food.util.DBConnection;
+
 /**
  * Servlet implementation class UpdateItemController
  */
@@ -32,8 +34,7 @@ public class UpdateItemController extends HttpServlet {
 		PreparedStatement ps = null;
 		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306","root","root");
+			con=DBConnection.getDBConnection();
 			String sql1="UPDATE mydb.tab_items SET deliverycharge = ? ";			
 			ps=con.prepareStatement(sql1);
 			ps.setInt(1,delcharge );
