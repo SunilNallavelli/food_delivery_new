@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Food_Delivery_System</display-name>
+  <servlet>
+<servlet-name>TestRegister</servlet-name>
+<servlet-class>com.online.food.controller.UserRegistrationController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>TestRegister</servlet-name>
+<url-pattern>/TestRegister</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>Login</servlet-name>
+<servlet-class>com.online.food.controller.LoginController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Login</servlet-name>
+<url-pattern>/Login</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>forgot</servlet-name>
+<servlet-class>com.online.food.controller.ForgotController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>forgot</servlet-name>
+<url-pattern>/forgot</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+        <description></description>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.online.food.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+ <servlet>
+<servlet-name>addItem</servlet-name>
+<servlet-class>com.online.food.controller.AddItemsController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>addItem</servlet-name>
+<url-pattern>/addItem</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>updateItem</servlet-name>
+<servlet-class>com.online.food.controller.UpdateItemController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>updateItem</servlet-name>
+<url-pattern>/updateItem</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>select</servlet-name>
+<servlet-class>com.online.food.controller.SelectItemsController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>select</servlet-name>
+<url-pattern>/select</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>DeleteItem</servlet-name>
+<servlet-class>com.online.food.controller.DeleteController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteItem</servlet-name>
+<url-pattern>/DeleteItem</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>OrdersPage</servlet-name>
+<servlet-class>com.online.food.controller.UserOrdersPage</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>OrdersPage</servlet-name>
+<url-pattern>/OrdersPage</url-pattern>
+</servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
