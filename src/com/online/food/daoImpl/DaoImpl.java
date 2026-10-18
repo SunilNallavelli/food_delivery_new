@@ -51,13 +51,16 @@ public class DaoImpl implements DaoInterface{
 				{
 					countryId = rs.getInt(1);
 				}
-				pst = con.prepareStatement("insert into mydb.tab_state (state,tab_country_countryid) values (?,(select countryid from mydb.tab_country where country=?))");
+				// insert the state/city only if it is not already there, so many users can share them
+				pst = con.prepareStatement("insert into mydb.tab_state (state,tab_country_countryid) select ?,countryid from mydb.tab_country where country=? and not exists (select 1 from mydb.tab_state where state=?)");
 				pst.setString(1,regBo.getState());
 				pst.setString(2,regBo.getCountry());
+				pst.setString(3,regBo.getState());
 				int c1=pst.executeUpdate();
-				pst = con.prepareStatement("insert into mydb.tab_city(city,tab_state_stateid)values(?,(select stateid from mydb.tab_state where state=?))");
+				pst = con.prepareStatement("insert into mydb.tab_city(city,tab_state_stateid) select ?,stateid from mydb.tab_state where state=? and not exists (select 1 from mydb.tab_city where city=?) limit 1");
 				pst.setString(1,regBo.getCity());
 				pst.setString(2,regBo.getState());
+				pst.setString(3,regBo.getCity());
 				int c2=pst.executeUpdate();
 				pst = con.prepareStatement(q2);
 				pst.setString(1, regBo.getCity());
@@ -80,7 +83,7 @@ public class DaoImpl implements DaoInterface{
 				while(rs.next()) {
 					loginId = rs.getInt(1);
 				}
-				pst=con.prepareStatement("insert into mydb.tab_address(flatno,appartment,landmark,pincode,tab_city_cityid) values (?,?,?,?,(select cityid from mydb.tab_city where city=?))");
+				pst=con.prepareStatement("insert into mydb.tab_address(flatno,appartment,landmark,pincode,tab_city_cityid) values (?,?,?,?,(select cityid from mydb.tab_city where city=? limit 1))");
 				pst.setString(1, regBo.getFlatNum());
 				pst.setString(2,regBo.getApartmentNum());
 				pst.setString(3, regBo.getLandmark()); 
@@ -102,7 +105,8 @@ public class DaoImpl implements DaoInterface{
 				pst.setInt(5, loginId);
 				pst.setInt(6, addrId);
 				int c5= pst.executeUpdate();
-				if(c1==1&&c2==1&&c3==1&&c4==1&&c5==1)
+				// c1/c2 are 0 when the state/city already existed, so only the user rows decide success
+				if(c3==1&&c4==1&&c5==1)
 					flag=1;
 				
 			}
