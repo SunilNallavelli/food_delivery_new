@@ -1,0 +1,13 @@
+# Eclipse build output and workspace files
+build/
+bin/
+.metadata/
+*.class
+
+# Real database settings (contain the DB password) - copy db.properties.example instead
+src/com/online/food/config/db.properties
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.log
