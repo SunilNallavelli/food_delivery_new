@@ -100,7 +100,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="panel text-left">
-							<h1>Tharun kumar</h1>
+							<h1>Sunil Nallavelli</h1>
 							<p class="pt-4">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -246,10 +246,10 @@
     	</div>
 
       <div class="card-body">
-        <h3 class="card-title">Tharun Kumar</h3>
+        <h3 class="card-title">Sunil Nallavelli</h3>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-        <p class="text-black-50">CEO at Google</p>
+        <p class="text-black-50">Java Backend Developer</p>
       </div>
     </div>
   </div>
@@ -263,10 +263,10 @@
     	</div>
 
       <div class="card-body">
-        <h3 class="card-title">H Tharun Kumar</h3>
+        <h3 class="card-title">Sunil Nallavelli</h3>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-        <p class="text-black-50">CEO at Google</p>
+        <p class="text-black-50">Java Backend Developer</p>
       </div>
     </div>
     </div>
@@ -277,10 +277,10 @@
     	</div>
 
       <div class="card-body">
-        <h3 class="card-title">H Tharun Kumar</h3>
+        <h3 class="card-title">Sunil Nallavelli</h3>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-        <p class="text-black-50">CEO at Google</p>
+        <p class="text-black-50">Java Backend Developer</p>
       </div>
     </div>
     </div>
@@ -291,10 +291,10 @@
     	</div>
 
       <div class="card-body">
-        <h3 class="card-title">H Tharun Kumar</h3>
+        <h3 class="card-title">Sunil Nallavelli</h3>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-        <p class="text-black-50">CEO at Google</p>
+        <p class="text-black-50">Java Backend Developer</p>
       </div>
     </div>
     </div>
@@ -308,10 +308,10 @@
     	</div>
 
       <div class="card-body">
-        <h3 class="card-title">Tharun Kumar</h3>
+        <h3 class="card-title">Sunil Nallavelli</h3>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-        <p class="text-black-50">CEO at Google</p>
+        <p class="text-black-50">Java Backend Developer</p>
       </div>
     </div>
   </div>
@@ -326,7 +326,7 @@
 					<h4 class="text-light">About Us</h4>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. </p>
-					<p class="pt-4 text-muted">copyright @2019 all rights reserved by</p>
+					<p class="pt-4 text-muted">copyright @2026 all rights reserved by</p>
 					<span>Online Food Delivery</span>
 				</div>
 				<div class="col-md-5">

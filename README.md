@@ -2,6 +2,8 @@
 
 A web application where customers register, browse a veg / non-veg menu, place orders and see their order history, and an admin manages the menu items. Built with **Java Servlets, JSP and JDBC** on **Apache Tomcat 9**, using a **MySQL 8** database.
 
+**Author:** Sunil Nallavelli. Built during my internship as a team project; I worked on all modules and on the database design.
+
 ## Tech stack
 
 | Layer | Technology |
