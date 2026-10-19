@@ -91,7 +91,7 @@ tab_register 1──* tab_orders *──1 tab_items
 - Eclipse IDE for Enterprise Java and Web Developers
 - Apache Tomcat **9.x** (Tomcat 10+ uses `jakarta.servlet` and will not run this project)
 - A MySQL 8 database (local or online, e.g. Aiven's free MySQL)
-- `mysql-connector-j-8.4.0.jar` in `WebContent/WEB-INF/lib`
+- MySQL Connector/J 8.4.0 (already included in `WebContent/WEB-INF/lib`)
 
 ### 1. Create the database
 Run `database/schema.sql` against your MySQL server (MySQL Workbench, DBeaver or the `mysql` client).
